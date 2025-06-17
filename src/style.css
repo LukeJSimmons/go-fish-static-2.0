@@ -1,0 +1,32 @@
+/* Optics */
+@import '@rolemodel/optics/dist/css/optics.css';
+
+/* Optics Overrides */
+@import './components/optics-overrides/accordion.css';
+
+/* Component Styles */
+@import './components/panel.css';
+@import './components/player-decks.css';
+@import './components/cards.css';
+@import './components/feed.css';
+
+:root {
+  --gf-header-height: 5rem;
+}
+
+.game {
+  --gf-sidebar-width: calc(var(--op-size-unit) * 100);
+  --gf-footer-height: calc(var(--op-size-unit) * 70);
+
+  background-color: var(--op-color-neutral-plus-max);
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr var(--gf-sidebar-width);
+  grid-template-rows: 1fr var(--gf-footer-height);
+
+  .game__header {
+    display: flex;
+    gap: var(--op-space-x-small);
+    font-weight: var(--op-font-weight-bold);
+  }
+}

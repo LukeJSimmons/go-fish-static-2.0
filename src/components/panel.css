@@ -1,0 +1,38 @@
+.panel {
+  display: grid;
+  grid-template-rows: var(--gf-header-height) 1fr;
+  background-color: var(--op-color-neutral-plus-eight);
+  overflow: scroll;
+
+  &.panel--player-decks {
+    gap: var(--op-space-small);
+    background-color: var(--op-color-neutral-plus-max);
+  }
+
+  &.panel--feed {
+    border-left: var(--op-color-neutral-plus-four) var(--op-border-width) solid;
+  }
+
+  &.panel--hand {
+    border-top: var(--op-color-neutral-plus-four) var(--op-border-width) solid;
+  }
+
+  &.panel--books {
+    border-top: var(--op-color-neutral-plus-four) var(--op-border-width) solid;
+    border-left: var(--op-color-neutral-plus-four) var(--op-border-width) solid;
+  }
+
+  .panel__header {
+    display: flex;
+    padding: var(--op-space-small) var(--op-space-medium) var(--op-space-x-small) var(--op-space-medium);
+    align-items: center;
+
+    border-bottom: var(--op-color-neutral-plus-four) var(--op-border-width) solid;
+
+    &.header--feed {
+      background-color: var(--op-color-neutral-plus-eight);
+
+      border-left: var(--op-color-neutral-plus-four) var(--op-border-width) solid;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.accordion {
+  &.accordion--within-player-decks {
+    background-color: var(--op-color-neutral-plus-eight);
+    box-shadow: var(--op-border-all) var(--op-color-primary-plus-four);
+    border-radius: var(--op-radius-small);
+
+    > summary {
+      padding: var(--op-space-x-small);
+      padding-right: var(--op-space-medium);
+      box-shadow: var(--op-border-all) var(--op-color-primary-plus-four);
+
+      > .player-decks__deck-details {
+        display: flex;
+        gap: var(--op-space-x-large);
+      }
+  
+      > .accordion__label,
+      > .player-decks__deck-details .accordion__label {
+        font-size: var(--op-font-medium);
+        font-weight: var(--op-font-weight-normal);
+        padding: var(--op-space-x-small);
+      }
+  
+      > .accordion__marker {
+        width: var(--op-input-height-small);
+        height: var(--op-input-height-small);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: var(--op-radius-circle);
+        padding: var(--op-space-2x-small);
+        transition: 0.1s;
+      }
+  
+      > .accordion__marker:hover {
+        box-shadow: var(--op-border-all) var(--op-color-primary-plus-three);
+      }
+
+    }
+
+    &[open] .accordion__marker {
+      background-color: var(--op-color-primary-plus-five);
+      box-shadow: var(--op-border-all) var(--op-color-primary-plus-three);
+    }
+  }
+}

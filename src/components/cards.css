@@ -1,0 +1,27 @@
+.cards {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  padding: var(--op-space-small);
+
+  &.cards--books {
+    height: 66%;
+  }
+
+  &.cards--deck {
+    height: 15rem;
+  }
+
+  > * {
+    margin-right: calc(var(--op-size-unit) * -12);
+  }
+
+  > *:last-of-type {
+    margin-right: 0;
+  }
+
+  .cards__card {
+    height: 100%;
+    box-shadow: none;
+  }
+}

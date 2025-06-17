@@ -1,0 +1,11 @@
+.player-decks {
+  padding: var(--op-space-3x-large);
+  display: flex;
+  flex-direction: column;
+  gap: var(--op-space-medium);
+  
+  .player-decks__deck-group {
+    display: flex;
+    justify-content: space-between;
+  }
+}

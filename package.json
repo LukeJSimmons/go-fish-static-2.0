@@ -1,0 +1,17 @@
+{
+  "name": "go-fish-static-2.0",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "./node_modules/.bin/vite",
+    "build": "./node_modules/.bin/vite build",
+    "preview": "./node_modules/.bin/vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@rolemodel/optics": "^2.1.3"
+  }
+}
