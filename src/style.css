@@ -24,27 +24,10 @@
     display: flex;
     gap: var(--op-space-x-small);
     font-weight: var(--op-font-weight-bold);
-  }
-}
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme-mode='light']) {
-    .game {
-      .game__header {
-        > .icon {
-          color: black;
-        }
-      }
-    }
-  }
-}
-
-:root[data-theme-mode='dark'] {
-  .game {
-    .game__header {
-      > .icon {
-        color: black;
-      }
+    a {
+      color: var(--op-color-neutral-minus-max);
+      text-decoration: none;
     }
   }
 }
