@@ -21,7 +21,18 @@
   }
 
   .cards__card {
+    position: relative;
+    bottom: 0;
     height: 100%;
     box-shadow: none;
+    transition: 0.1s;
+  }
+
+  .cards__card:hover {
+    bottom: var(--op-space-small);
+  }
+
+  .cards__card:active {
+    bottom: var(--op-space-large);
   }
 }
