@@ -10,6 +10,7 @@
 
   &.cards--deck {
     height: 12rem;
+    
     > * {
       margin-right: calc(var(--op-size-unit) * -6);
     }
@@ -50,6 +51,14 @@
 
     &.cards--deck {
       height: calc(var(--op-size-unit) * 30);
+
+      > * {
+        margin-right: calc(var(--op-size-unit) * -14);
+      }
+
+      > *:last-of-type {
+        margin-right: 0;
+      }
     }
   }
 }
