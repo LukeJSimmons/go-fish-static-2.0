@@ -52,6 +52,6 @@
 @media screen and (max-width: 750px) {
   .game {
     grid-template-columns: none;
-    grid-template-rows: 3fr 2fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 4fr;
   }
 }

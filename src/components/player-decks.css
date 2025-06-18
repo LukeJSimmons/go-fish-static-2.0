@@ -13,6 +13,6 @@
 
 @media screen and (max-width: 750px) {
   .player-decks {
-    padding: var(--op-space-medium) var(--op-space-large);
+    padding: var(--op-space-small) var(--op-space-large);
   }
 }

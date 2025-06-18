@@ -11,16 +11,18 @@
   }
 
   &.panel--feed {
-    border-left: var(--op-color-border) var(--op-border-width) solid;
+    background-color: var(--op-color-primary-plus-eight);
+    box-shadow: inset var(--op-border-right) var(--op-color-border);
   }
 
   &.panel--hand {
-    border-top: var(--op-color-border) var(--op-border-width) solid;
+    background-color: var(--op-color-primary-plus-eight);
+    box-shadow: inset var(--op-border-bottom) var(--op-color-border);
   }
 
   &.panel--books {
-    border-top: var(--op-color-border) var(--op-border-width) solid;
-    border-left: var(--op-color-border) var(--op-border-width) solid;
+    background-color: var(--op-color-primary-plus-eight);
+    box-shadow: inset var(--op-border-width) var(--op-border-width) 0 0 var(--op-color-border);
   }
 
   .panel__header {
@@ -34,11 +36,11 @@
 
     &.panel__header--feed {
       justify-content: space-between;
-      background-color: var(--op-color-primary-plus-eight);
       color: var(--op-color-primary-on-plus-eight-alt);
     }
 
     &.panel__header--secondary {
+      color: var(--op-color-neutral-on-plus-eight-alt);
       height: fit-content;
       padding: var(--op-space-small) var(--op-space-medium) var(--op-space-x-small) var(--op-space-medium);
     }
@@ -52,6 +54,10 @@
       overflow-y: hidden;
       overflow-x: auto;
     }
+
+    &.panel__content--feed {
+      overflow: hidden;
+    }
   }
 }
 
@@ -59,14 +65,12 @@
   :root[data-theme-mode='dark'] {
     --op-color-border: var(--op-color-neutral-on-plus-max);
     .panel {
-      &.panel--feed {
-        background-color: var(--op-color-primary-plus-eight);
+      &.panel--hand {
+        background-color: var(--op-color-neutral-plus-eight);
       }
 
-      .panel__header {
-        &.panel__header--secondary {
-          color: var(--op-color-neutral-on-plus-eight-alt);
-        }
+      &.panel--books {
+        background-color: var(--op-color-neutral-plus-eight);
       }
     }
   }
@@ -74,27 +78,17 @@
 
 :root[data-theme-mode='dark'] {
   --op-color-border: var(--op-color-neutral-on-plus-max);
-  .panel {
-    &.panel--feed {
-      background-color: var(--op-color-primary-plus-eight);
-    }
-
-    .panel__header {
-      &.panel__header--secondary {
-        color: var(--op-color-neutral-on-plus-eight-alt);
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 750px) {
   .panel {
     &.panel--feed {
-      border-left: none
+      box-shadow: inset var(--op-border-bottom) var(--op-color-border);
+      grid-row: 4;
     }
 
     &.panel--books {
-      border-left: none;
+      box-shadow: inset var(--op-border-bottom) var(--op-color-border);
     }
 
     &.panel--player-decks {

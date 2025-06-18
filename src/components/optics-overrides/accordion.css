@@ -1,63 +1,60 @@
-.accordion {
-  &.accordion--within-player-decks {
-    background-color: var(--op-color-neutral-plus-eight);
+.accordion.accordion--within-player-decks {
+  background-color: var(--op-color-neutral-plus-eight);
+  box-shadow: var(--op-border-all) var(--op-color-primary-plus-four);
+  border-radius: var(--op-radius-small);
+
+  summary {
+    padding: 0 var(--op-space-x-small);
+    padding-right: var(--op-space-medium);
     box-shadow: var(--op-border-all) var(--op-color-primary-plus-four);
-    border-radius: var(--op-radius-small);
 
-    > summary {
-      padding: 0 var(--op-space-x-small);
-      padding-right: var(--op-space-medium);
-      box-shadow: var(--op-border-all) var(--op-color-primary-plus-four);
+    background-color: var(--op-color-primary-plus-max);
+    color: var(--op-color-primary-on-plus-max);
 
-      > .player-decks__deck-details {
-        display: flex;
-        gap: var(--op-space-x-large);
-      }
-  
-      > .accordion__label,
-      > .player-decks__deck-details .accordion__label {
-        font-size: var(--op-font-small);
-        font-weight: var(--op-font-weight-normal);
-        padding: var(--op-space-x-small);
-        transition: 0.1s;
-      }
-  
-      > .accordion__marker {
-        width: var(--op-input-height-small);
-        height: var(--op-input-height-small);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: var(--op-radius-circle);
-        padding: var(--op-space-2x-small);
-        transition: 0.1s;
-      }
-  
-      > .accordion__marker:hover {
-        box-shadow: var(--op-border-all) var(--op-color-primary-plus-three);
-      }
-
+    .player-decks__deck-details {
+      display: flex;
+      gap: var(--op-space-x-large);
     }
 
-    &[open] .accordion__marker {
-      background-color: var(--op-color-primary-plus-five);
+    .accordion__label,
+    .player-decks__deck-details .accordion__label {
+      font-size: var(--op-font-small);
+      font-weight: var(--op-font-weight-normal);
+      padding: var(--op-space-x-small);
+      transition: 0.1s;
+    }
+
+    .accordion__marker {
+      width: var(--op-input-height-small);
+      height: var(--op-input-height-small);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: var(--op-radius-circle);
+      padding: var(--op-space-2x-small);
+      transition: 0.1s;
+    }
+
+    .accordion__marker:hover {
       box-shadow: var(--op-border-all) var(--op-color-primary-plus-three);
     }
+
   }
-}
 
-@media (prefers-color-scheme: dark) {
-  :root[data-theme-mode='dark'] {
-    .accordion {
-      &.accordion--within-player-decks {
-        > summary {
-          background-color: var(--op-color-primary-plus-eight);
-        }
+  &[open] {
+    > summary {
+      background-color: var(--op-color-primary-plus-eight);
+      color: var(--op-color-primary-on-plus-eight);
+    }
 
-        &[open] .player-decks__deck-details .accordion__label {
-          color: var(--op-color-primary-on-plus-eight-alt);
-        }
-      }
+    .accordion__marker {
+      background-color: var(--op-color-primary-plus-five);
+      color: var(--op-color-primary-on-plus-five);
+      box-shadow: var(--op-border-all) var(--op-color-primary-plus-three);
+    }
+
+    .player-decks__deck-details .accordion__label {
+      color: var(--op-color-primary-on-plus-eight-alt);
     }
   }
 }

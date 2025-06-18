@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme-mode="dark">
+<html lang="en" data-theme-mode="light">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -16,7 +16,7 @@
         </div>
         <div class="panel__content">
           <div class="player-decks">
-            <h3>Players</h3>
+            <span>Players</span>
             <details class="accordion accordion--within-player-decks">
               <summary>
                 <span class="accordion__marker material-symbols-outlined icon">arrow_right</span>
@@ -28,13 +28,34 @@
               </summary>
               <div class="player-decks__deck-group">
                 <div class="cards cards--deck">
-                  <img class="cards__card" src="/images/cards/Card Back.svg" />
-                  <img class="cards__card" src="/images/cards/Card Back.svg" />
-                  <img class="cards__card" src="/images/cards/Card Back.svg" />
-                  <img class="cards__card" src="/images/cards/Card Back.svg" />
-                  <img class="cards__card" src="/images/cards/Card Back.svg" />
-                  <img class="cards__card" src="/images/cards/Card Back.svg" />
-                  <img class="cards__card" src="/images/cards/Card Back.svg" />
+                  <div class="cards__card">
+                    <img class="cards__card" src="/images/cards/Card Back.svg" />
+                    <img class="cards__card--overlay" src="/images/cards/back-red 1.png" />
+                  </div>
+                  <div class="cards__card">
+                    <img class="cards__card" src="/images/cards/Card Back.svg" />
+                    <img class="cards__card--overlay" src="/images/cards/back-red 1.png" />
+                  </div>
+                  <div class="cards__card">
+                    <img class="cards__card" src="/images/cards/Card Back.svg" />
+                    <img class="cards__card--overlay" src="/images/cards/back-red 1.png" />
+                  </div>
+                  <div class="cards__card">
+                    <img class="cards__card" src="/images/cards/Card Back.svg" />
+                    <img class="cards__card--overlay" src="/images/cards/back-red 1.png" />
+                  </div>
+                  <div class="cards__card">
+                    <img class="cards__card" src="/images/cards/Card Back.svg" />
+                    <img class="cards__card--overlay" src="/images/cards/back-red 1.png" />
+                  </div>
+                  <div class="cards__card">
+                    <img class="cards__card" src="/images/cards/Card Back.svg" />
+                    <img class="cards__card--overlay" src="/images/cards/back-red 1.png" />
+                  </div>
+                  <div class="cards__card">
+                    <img class="cards__card" src="/images/cards/Card Back.svg" />
+                    <img class="cards__card--overlay" src="/images/cards/back-red 1.png" />
+                  </div>
                 </div>
                 <div class="cards cards--deck cards--books">
                   <img class="cards__card" src="/images/cards/2C.svg" />
@@ -53,11 +74,26 @@
               </summary>
               <div class="player-decks__deck-group">
                 <div class="cards cards--deck">
-                  <img class="cards__card" src="/images/cards/Card Back.svg" />
-                  <img class="cards__card" src="/images/cards/Card Back.svg" />
-                  <img class="cards__card" src="/images/cards/Card Back.svg" />
-                  <img class="cards__card" src="/images/cards/Card Back.svg" />
-                  <img class="cards__card" src="/images/cards/Card Back.svg" />
+                  <div class="cards__card">
+                    <img class="cards__card" src="/images/cards/Card Back.svg" />
+                    <img class="cards__card--overlay" src="/images/cards/back-red 1.png" />
+                  </div>
+                  <div class="cards__card">
+                    <img class="cards__card" src="/images/cards/Card Back.svg" />
+                    <img class="cards__card--overlay" src="/images/cards/back-red 1.png" />
+                  </div>
+                  <div class="cards__card">
+                    <img class="cards__card" src="/images/cards/Card Back.svg" />
+                    <img class="cards__card--overlay" src="/images/cards/back-red 1.png" />
+                  </div>
+                  <div class="cards__card">
+                    <img class="cards__card" src="/images/cards/Card Back.svg" />
+                    <img class="cards__card--overlay" src="/images/cards/back-red 1.png" />
+                  </div>
+                  <div class="cards__card">
+                    <img class="cards__card" src="/images/cards/Card Back.svg" />
+                    <img class="cards__card--overlay" src="/images/cards/back-red 1.png" />
+                  </div>
                 </div>
                 <div class="cards cards--deck cards--books">
                   <img class="cards__card" src="/images/cards/2C.svg" />
@@ -76,8 +112,14 @@
               </summary>
               <div class="player-decks__deck-group">
                 <div class="cards cards--deck">
-                  <img class="cards__card" src="/images/cards/Card Back.svg" />
-                  <img class="cards__card" src="/images/cards/Card Back.svg" />
+                  <div class="cards__card">
+                    <img class="cards__card" src="/images/cards/Card Back.svg" />
+                    <img class="cards__card--overlay" src="/images/cards/back-red 1.png" />
+                  </div>
+                  <div class="cards__card">
+                    <img class="cards__card" src="/images/cards/Card Back.svg" />
+                    <img class="cards__card--overlay" src="/images/cards/back-red 1.png" />
+                  </div>
                 </div>
                 <div class="cards cards--deck cards--books">
                   <img class="cards__card" src="/images/cards/2C.svg" />
@@ -94,10 +136,10 @@
           <span>Game Feed</span>
           <span class="badge badge--primary">Your Turn</span>
         </div>
-        <div class="panel__content">
+        <div class="panel__content panel__content--feed">
           <div class="feed">
             <div class="feed__actions">
-              <span class="feed__player-action">Luke Asked <strong>Oliver</strong> for any <strong>8</strong>s</span>
+              <span class="feed__bubble feed__bubble--player-action">Luke Asked <strong>Oliver</strong> for any <strong>8</strong>s</span>
               <div class="feed__action-responses">
                 <div class="feed__response">
                   <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +150,7 @@
                   <path d="M12.0001 15.5833L11.234 14.8173L14.0017 12.0417H5.41675V3.41666H6.50008V10.9583H14.0017L11.234 8.19062L12.008 7.42478L16.0834 11.5L12.0001 15.5833Z"/>
                   </g>
                   </svg>
-                  <span class="feed__player-response">Go fish: Oliver doesn't have any 8s</span>
+                  <span class="feed__bubble feed__bubble--player-response">Go fish: Oliver doesn't have any 8s</span>
                 </div>
                 <div class="feed__response">
                   <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -119,7 +161,7 @@
                   <path d="M12.0001 15.5833L11.234 14.8173L14.0017 12.0417H5.41675V3.41666H6.50008V10.9583H14.0017L11.234 8.19062L12.008 7.42478L16.0834 11.5L12.0001 15.5833Z"/>
                   </g>
                   </svg>
-                  <span class="feed__game-feedback">You drew a 7 of Diamonds</span>
+                  <span class="feed__bubble feed__bubble--game-feedback">You drew a 7 of Diamonds</span>
                 </div>
               </div>
             </div>
