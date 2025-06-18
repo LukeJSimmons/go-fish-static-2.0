@@ -11,7 +11,7 @@
 @import './components/feed.css';
 
 .game {
-  --gf-sidebar-width: calc(var(--op-size-unit) * 100);
+  --gf-sidebar-width: calc(var(--op-size-unit) * 90);
   --gf-footer-height: calc(var(--op-size-unit) * 70);
 
   background-color: var(--op-color-neutral-plus-max);

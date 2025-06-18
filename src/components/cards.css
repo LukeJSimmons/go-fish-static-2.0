@@ -9,7 +9,10 @@
   }
 
   &.cards--deck {
-    height: 15rem;
+    height: 12rem;
+    > * {
+      margin-right: calc(var(--op-size-unit) * -6);
+    }
   }
 
   > * {
