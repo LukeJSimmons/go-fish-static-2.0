@@ -10,30 +10,37 @@
   }
 
   &.panel--feed {
-    border-left: var(--op-color-neutral-plus-four) var(--op-border-width) solid;
+    border-left: var(--op-color-border) var(--op-border-width) solid;
   }
 
   &.panel--hand {
-    border-top: var(--op-color-neutral-plus-four) var(--op-border-width) solid;
+    border-top: var(--op-color-border) var(--op-border-width) solid;
   }
 
   &.panel--books {
-    border-top: var(--op-color-neutral-plus-four) var(--op-border-width) solid;
-    border-left: var(--op-color-neutral-plus-four) var(--op-border-width) solid;
+    border-top: var(--op-color-border) var(--op-border-width) solid;
+    border-left: var(--op-color-border) var(--op-border-width) solid;
   }
 
   .panel__header {
+    height: 6rem;
     display: flex;
-    padding: var(--op-space-small) var(--op-space-medium) var(--op-space-x-small) var(--op-space-medium);
+    padding: var(--op-space-2x-small) var(--op-space-medium);
     align-items: center;
 
-    border-bottom: var(--op-color-neutral-plus-four) var(--op-border-width) solid;
+    color: var(--op-color-primary-max);
+    box-shadow: var(--op-border-bottom) var(--op-color-border);
 
     &.panel__header--feed {
       display: flex;
       justify-content: space-between;
       background-color: var(--op-color-primary-plus-eight);
       color: var(--op-color-primary-on-plus-eight-alt);
+    }
+
+    &.panel__header--secondary {
+      height: fit-content;
+      padding: var(--op-space-small) var(--op-space-medium) var(--op-space-x-small) var(--op-space-medium);
     }
   }
 
@@ -44,9 +51,31 @@
 
 @media (prefers-color-scheme: dark) {
   :root[data-theme-mode='dark'] {
+    --op-color-border: var(--op-color-neutral-on-plus-max);
     .panel {
       &.panel--feed {
         background-color: var(--op-color-primary-plus-eight);
+      }
+
+      .panel__header {
+        &.panel__header--secondary {
+          color: var(--op-color-neutral-on-plus-eight-alt);
+        }
+      }
+    }
+  }
+}
+
+:root[data-theme-mode='dark'] {
+  --op-color-border: var(--op-color-neutral-on-plus-max);
+  .panel {
+    &.panel--feed {
+      background-color: var(--op-color-primary-plus-eight);
+    }
+
+    .panel__header {
+      &.panel__header--secondary {
+        color: var(--op-color-neutral-on-plus-eight-alt);
       }
     }
   }

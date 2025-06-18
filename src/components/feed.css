@@ -31,6 +31,10 @@
   .feed__response {
     display: flex;
     align-items: center;
+
+    > svg {
+      fill: var(--op-color-primary-on-plus-eight-alt);
+    }
   }
 
   .feed__player-response {
@@ -71,7 +75,12 @@
       .action-options__input-collection {
         display: grid;
         gap: var(--op-space-2x-small);
-        color-scheme: only light;
+
+        > select {
+          --op-encoded-images-dropdown-arrow: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDEyIDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik02IDguMzc1MDFMMCAyLjM3NTAxTDEuNCAwLjk3NTAwNkw2IDUuNTc1MDFMMTAuNiAwLjk3NTAwNkwxMiAyLjM3NTAxTDYgOC4zNzUwMVoiIGZpbGw9IiMwQTBBMEIiLz4KPC9zdmc+Cg==);
+          color-scheme: only light;
+          background-image: var(--op-encoded-images-dropdown-arrow);
+        }
       }
     }
   }
@@ -80,8 +89,6 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme-mode='light']) {
     .feed {
-      background-color: var(--op-color-primary-plus-eight);
-
       .feed__request-form {
         color: var(--op-color-primary-on-plus-seven);
       }
@@ -91,8 +98,6 @@
 
 :root[data-theme-mode='dark'] {
   .feed {
-    background-color: var(--op-color-primary-plus-eight);
-
     .feed__request-form {
       color: var(--op-color-primary-on-plus-seven);
     }
