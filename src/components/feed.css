@@ -83,6 +83,16 @@
       .feed__request-form {
         color: var(--op-color-primary-on-plus-seven);
       }
+
+      .request-form__action-options {
+        .action-options__input-collection {
+          > select {
+            color: var(--op-color-neutral-on-plus-eight);
+            background-color: var(--op-color-neutral-plus-eight);
+            box-shadow: var(--op-border-all) var(--op-color-neutral-plus-four);
+          }
+        }
+      }
     }
   }
 }

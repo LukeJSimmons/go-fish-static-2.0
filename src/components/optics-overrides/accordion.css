@@ -51,6 +51,10 @@
       &.accordion--within-player-decks {
         > summary {
           background-color: var(--op-color-primary-plus-eight);
+
+          > .player-decks__deck-details .accordion__label {
+            color: var(--op-color-primary-on-plus-eight-alt);
+          }
         }
       }
     }
