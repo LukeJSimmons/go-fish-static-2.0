@@ -44,3 +44,15 @@
     }
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme-mode='dark'] {
+    .accordion {
+      &.accordion--within-player-decks {
+        > summary {
+          background-color: var(--op-color-primary-plus-eight);
+        }
+      }
+    }
+  }
+}

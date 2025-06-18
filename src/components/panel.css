@@ -29,10 +29,21 @@
 
     border-bottom: var(--op-color-neutral-plus-four) var(--op-border-width) solid;
 
-    &.header--feed {
-      background-color: var(--op-color-neutral-plus-eight);
+    &.panel__header--feed {
+      display: flex;
+      justify-content: space-between;
+      background-color: var(--op-color-primary-plus-eight);
+      color: var(--op-color-primary-on-plus-eight-alt);
+    }
+  }
 
-      border-left: var(--op-color-neutral-plus-four) var(--op-border-width) solid;
+  .panel__badge {
+    padding: var(--op-space-2x-small) var(--op-space-x-small);
+    border-radius: var(--op-radius-medium);
+    
+    &.panel__badge--feed {
+      color: var(--op-color-primary-on-base);
+      background-color: var(--op-color-primary-base);
     }
   }
 }

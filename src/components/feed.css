@@ -74,3 +74,15 @@
     }
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme-mode='dark'] {
+    .feed {
+      background-color: var(--op-color-primary-plus-eight);
+
+      .feed__request-form {
+        color: var(--op-color-primary-on-plus-seven);
+      }
+    }
+  }
+}
