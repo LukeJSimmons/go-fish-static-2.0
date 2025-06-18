@@ -1,0 +1,20 @@
+.games-list {
+  background-color: var(--op-color-neutral-plus-max);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--op-space-2x-large) var(--op-space-3x-large);
+  gap: var(--op-space-x-large);
+
+  .games-list__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  section {
+    width: calc(var(--op-size-unit) * 200);
+    display: flex;
+    flex-direction: column;
+    gap: var(--op-space-x-small);
+  }
+}

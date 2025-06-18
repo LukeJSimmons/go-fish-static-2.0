@@ -1,0 +1,21 @@
+.game {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--op-space-x-small) var(--op-space-medium);
+  
+  border-radius: var(--op-radius-medium);
+  background-color: var(--op-color-neutral-plus-eight);
+  color: var(--op-color-neutral-on-plus-eight);
+  box-shadow: var(--op-border-all) var(--op-color-border);
+
+  .game__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--op-space-x-large);
+  }
+
+  .game__player-count {
+    color: var(--op-color-neutral-on-plus-eight-alt);
+  }
+}

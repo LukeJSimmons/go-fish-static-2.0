@@ -9,8 +9,10 @@
 @import './components/player-decks.css';
 @import './components/cards.css';
 @import './components/feed.css';
+@import './components/games-list.css';
+@import './components/game.css';
 
-.game {
+.game-layout {
   --gf-sidebar-width: calc(var(--op-size-unit) * 90);
   --gf-footer-height: calc(var(--op-size-unit) * 70);
 
@@ -20,7 +22,7 @@
   grid-template-columns: 1fr min(40%, var(--gf-sidebar-width));
   grid-template-rows: 1fr var(--gf-footer-height);
 
-  .game__header {
+  .game-layout__header {
     display: flex;
     gap: var(--op-space-x-small);
     font-weight: var(--op-font-weight-bold);
@@ -33,7 +35,7 @@
 }
 
 @media screen and (max-width: 750px) {
-  .game {
+  .game-layout {
     grid-template-columns: none;
     grid-template-rows: 2fr 1fr 1fr 4fr;
   }
