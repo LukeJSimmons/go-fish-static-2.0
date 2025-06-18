@@ -1,6 +1,7 @@
 .panel {
+  --gf-header-height: 6rem;
   display: grid;
-  grid-template-rows: var(--gf-header-height) 1fr;
+  grid-template-rows: auto 1fr;
   background-color: var(--op-color-neutral-plus-eight);
   overflow: hidden;
 
@@ -23,16 +24,15 @@
   }
 
   .panel__header {
-    height: 6rem;
+    height: var(--gf-header-height);
     display: flex;
     padding: var(--op-space-2x-small) var(--op-space-medium);
     align-items: center;
 
     color: var(--op-color-primary-max);
-    box-shadow: var(--op-border-bottom) var(--op-color-border);
+    box-shadow: inset var(--op-border-top) var(--op-color-border);
 
     &.panel__header--feed {
-      display: flex;
       justify-content: space-between;
       background-color: var(--op-color-primary-plus-eight);
       color: var(--op-color-primary-on-plus-eight-alt);
@@ -45,7 +45,13 @@
   }
 
   .panel__content {
+    height: 100%;
     overflow-y: auto;
+
+    &.panel__content--horizontal {
+      overflow-y: hidden;
+      overflow-x: auto;
+    }
   }
 }
 
@@ -77,6 +83,22 @@
       &.panel__header--secondary {
         color: var(--op-color-neutral-on-plus-eight-alt);
       }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .panel {
+    &.panel--feed {
+      border-left: none
+    }
+
+    &.panel--books {
+      border-left: none;
+    }
+
+    &.panel--player-decks {
+      gap: 0;
     }
   }
 }

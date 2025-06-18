@@ -9,3 +9,9 @@
     justify-content: space-between;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .player-decks {
+    padding: var(--op-space-medium) var(--op-space-large);
+  }
+}

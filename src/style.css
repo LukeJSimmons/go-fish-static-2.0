@@ -10,10 +10,6 @@
 @import './components/cards.css';
 @import './components/feed.css';
 
-:root {
-  --gf-header-height: 5rem;
-}
-
 .game {
   --gf-sidebar-width: calc(var(--op-size-unit) * 100);
   --gf-footer-height: calc(var(--op-size-unit) * 70);
