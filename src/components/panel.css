@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: var(--gf-header-height) 1fr;
   background-color: var(--op-color-neutral-plus-eight);
-  overflow: scroll;
+  overflow: hidden;
 
   &.panel--player-decks {
     gap: var(--op-space-small);
@@ -37,13 +37,17 @@
     }
   }
 
-  .panel__badge {
-    padding: var(--op-space-2x-small) var(--op-space-x-small);
-    border-radius: var(--op-radius-medium);
-    
-    &.panel__badge--feed {
-      color: var(--op-color-primary-on-base);
-      background-color: var(--op-color-primary-base);
+  .panel__content {
+    overflow-y: auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme-mode='dark'] {
+    .panel {
+      &.panel--feed {
+        background-color: var(--op-color-primary-plus-eight);
+      }
     }
   }
 }
