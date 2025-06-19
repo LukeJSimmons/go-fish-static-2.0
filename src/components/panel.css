@@ -80,7 +80,8 @@
   --op-color-border: var(--op-color-neutral-on-plus-max);
 }
 
-@media screen and (max-width: 750px) {
+/* --op-breakpoint-small */
+@media (width <= 768px) {
   .panel {
     &.panel--feed {
       box-shadow: inset var(--op-border-bottom) var(--op-color-border);

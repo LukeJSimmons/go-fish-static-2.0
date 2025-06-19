@@ -49,7 +49,8 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+/* --op-breakpoint-small */
+@media (width <= 768px) {
   .cards {
     height: calc(var(--op-size-unit) * 40);
 

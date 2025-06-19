@@ -1,0 +1,29 @@
+:root[data-theme="copper"] {
+  /* Colors */
+  --op-color-primary-h: 18;
+  --op-color-primary-s: 62%;
+  --op-color-primary-l: 54%;
+
+  .accordion.accordion--within-player-decks {
+    border-radius: var(--op-radius-2x-large);
+
+    summary {
+      border-radius: var(--op-radius-2x-large);
+    }
+  }
+
+  .feed {
+    .feed__bubble {
+      border-radius: var(--op-radius-pill);
+    }
+
+    .feed__request-form {
+      border-radius: var(--op-radius-2x-large);
+
+      select,
+      button {
+        border-radius: var(--op-radius-pill);
+      }
+    }
+  }
+}

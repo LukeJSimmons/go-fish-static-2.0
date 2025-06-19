@@ -59,7 +59,8 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+/* --op-breakpoint-small */
+@media (width <= 768px) {
   .accordion {
     &.accordion--within-player-decks {
       max-height: calc(var(--op-size-unit) * 22);

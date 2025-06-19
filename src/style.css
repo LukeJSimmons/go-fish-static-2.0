@@ -13,6 +13,9 @@
 @import './components/games-list.css';
 @import './components/game.css';
 
+/* Themes */
+@import './themes/copper-theme.css';
+
 .game-layout {
   --gf-sidebar-width: calc(var(--op-size-unit) * 90);
   --gf-footer-height: calc(var(--op-size-unit) * 70);
@@ -35,7 +38,8 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+/* --op-breakpoint-small */
+@media (width <= 768px) {
   .game-layout {
     grid-template-columns: none;
     grid-template-rows: 2fr 1fr 1fr 4fr;

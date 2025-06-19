@@ -11,7 +11,8 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+/* --op-breakpoint-small */
+@media (width <= 768px) {
   .player-decks {
     padding: var(--op-space-small) var(--op-space-large);
   }
