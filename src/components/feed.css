@@ -33,11 +33,13 @@
   }
 
   .feed__bubble {
+    width: 100%;
     font-size: var(--op-font-small);
     padding: var(--op-space-small);
     border-radius: var(--op-radius-x-large);
 
     &.feed__bubble--player-action {
+      width: auto;
       font-size: var(--op-font-medium);
       color: var(--op-color-primary-on-plus-five-alt);
       background-color: var(--op-color-primary-plus-five);
