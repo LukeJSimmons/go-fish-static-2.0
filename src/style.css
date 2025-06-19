@@ -29,7 +29,8 @@
   .game-layout__header {
     display: flex;
     gap: var(--op-space-x-small);
-    font-weight: var(--op-font-weight-bold);
+    font-weight: var(--op-font-weight-semi-bold);
+    font-size: var(--op-font-large);
 
     a {
       color: var(--op-color-neutral-minus-max);

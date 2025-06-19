@@ -16,12 +16,15 @@
       gap: var(--op-space-x-large);
     }
 
-    .accordion__label,
-    .player-decks__deck-details .accordion__label {
-      font-size: var(--op-font-small);
+    .accordion__label {
+      font-size: var(--op-font-medium);
       font-weight: var(--op-font-weight-normal);
       padding: var(--op-space-x-small);
       transition: 0.1s;
+    }
+
+    .player-decks__deck-details .accordion__label {
+      font-size: var(--op-font-small);
     }
 
     .accordion__marker {
@@ -51,6 +54,10 @@
       background-color: var(--op-color-primary-plus-five);
       color: var(--op-color-primary-on-plus-five);
       box-shadow: var(--op-border-all) var(--op-color-primary-plus-three);
+    }
+
+    .accordion__label {
+      color: var(--op-color-primary-on-plus-eight);
     }
 
     .player-decks__deck-details .accordion__label {
