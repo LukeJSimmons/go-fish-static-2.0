@@ -4,6 +4,7 @@
 /* Optics Overrides */
 @import './components/optics-overrides/accordion.css';
 @import './components/optics-overrides/sidebar.css';
+@import './components/optics-overrides/form-group.css';
 
 /* Component Styles */
 @import './components/panel.css';
@@ -26,17 +27,22 @@
   grid-template-columns: 1fr min(40%, var(--gf-sidebar-width));
   grid-template-rows: 1fr var(--gf-footer-height);
 
-  .game-layout__header {
-    display: flex;
-    gap: var(--op-space-x-small);
-    font-weight: var(--op-font-weight-semi-bold);
-    font-size: var(--op-font-large);
+}
 
-    a {
-      color: var(--op-color-neutral-minus-max);
-      text-decoration: none;
-    }
-  }
+.body__header {
+  display: flex;
+  gap: var(--op-space-x-small);
+  font-weight: var(--op-font-weight-semi-bold);
+  font-size: var(--op-font-large);
+}
+
+a {
+  color: var(--op-color-neutral-minus-max);
+  text-decoration: none;
+}
+
+input {
+  color-scheme: only light;
 }
 
 /* --op-breakpoint-small */

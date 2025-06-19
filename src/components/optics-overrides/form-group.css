@@ -1,0 +1,13 @@
+.form-group {
+  &.form-group--new-game-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--op-space-large);
+
+    .form-label--radio {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

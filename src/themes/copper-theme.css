@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root[data-theme="copper"] {
   /* Colors */
   --op-color-primary-h: 18;
   --op-color-primary-s: 62%;
   --op-color-primary-l: 54%;
+
+  --op-color-alerts-warning-h: 213;
+  --op-color-alerts-warning-s: 48%;
+  --op-color-alerts-warning-l: 29%;
+
+  /* Fonts */
+  font-family: 'Roboto';
 
   .accordion.accordion--within-player-decks {
     border-radius: var(--op-radius-2x-large);
