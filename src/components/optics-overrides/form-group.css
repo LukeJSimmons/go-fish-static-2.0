@@ -1,9 +1,16 @@
 .form-group {
+  padding-block: 0;
+  
   &.form-group--new-game-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--op-space-large);
+    gap: var(--op-space-medium);
+    box-shadow: var(--op-border-all) var(--op-color-border);
+    padding: var(--op-space-large);
+    border-radius: var(--op-radius-large);
+    background-color: var(--op-color-neutral-plus-eight);
+    width: calc(var(--op-size-unit) * 100);
 
     .form-label--radio {
       display: flex;

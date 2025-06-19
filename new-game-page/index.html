@@ -34,40 +34,34 @@
           </nav>
         </nav>
       </header>
-      <div class="app__content">
-        <div class="new-game-form">
-          <header class="new-game-form__header">
-            <span>Create a New Game</span>
-          </header>
-          <main class="new-game-form__content">
-            <div class="form-group form-group--new-game-form">
-              <div class="form-row">
-                <label for="name" class="form-label">
-                  Game Title
-                  <input class="form-control" type="text" id="name">
-                </label>
-                <label for="player-count" class="form-label">
-                  Players
-                  <input class="form-control" type="number" id="player-count">
-                </label>
-              </div>
-              <label for="password" class="form-label">
-                Password
-                <input class="form-control" type="password" id="password">
-              </label>
-              <div class="form-row">
-                <label for="pairs" class="form-label form-label--radio">
-                  <input type="radio" class="form-control" id="pairs" name="match-count">
-                  Pairs
-                </label>
-                <label for="books" class="form-label form-label--radio">
-                  <input type="radio" class="form-control" id="books" name="match-count">
-                  Books
-                </label>
-              </div>
-              <button class="btn btn--primary">Create Game</button>
+      <div class="app__content new-game-form">
+        <div class="form-group form-group--new-game-form">
+          <span class="new-game-form__header">Create a New Game</span>
+          <div class="new-game-form__form-row">
+            <div class="form-group">
+              <label for="name" class="form-label">Game Title</label>
+              <input class="form-control" type="text" id="name" required>
             </div>
-          </main>
+            <div class="form-group">
+              <label for="player-count" class="form-label">Players</label>
+              <input class="form-control" type="number" id="player-count" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <input class="form-control" type="password" id="password" placeholder="public if not provided">
+          </div>
+          <div class="new-game-form__form-row new-game-form__form-row--radio">
+            <div class="form-group">
+              <input type="radio" class="form-control" id="pairs" name="match-count">
+              <label for="pairs" class="form-label form-label--radio">Pairs</label>
+            </div>
+            <div class="form-group">
+              <input type="radio" class="form-control" id="books" name="match-count">
+              <label for="books" class="form-label form-label--radio">Books</label>
+            </div>
+          </div>
+          <button class="btn btn--primary" type="submit">Create Game</button>
         </div>
       </div>
     </main>

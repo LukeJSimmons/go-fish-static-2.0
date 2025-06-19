@@ -1,0 +1,21 @@
+.new-game-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .new-game-form__header {
+    box-shadow: inset var(--op-border-top) var(--op-color-border);
+    width: 100%;
+    text-align: center;
+    padding-block-end: var(--op-space-x-small);
+  }
+
+  .new-game-form__form-row {
+    display: grid;
+    grid-template-columns: 1fr calc(var(--op-size-unit) * 15);
+
+    &.new-game-form__form-row--radio {
+      gap: var(--op-space-small);
+    }
+  }
+}

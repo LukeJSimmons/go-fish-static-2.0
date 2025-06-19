@@ -13,6 +13,7 @@
 @import './components/feed.css';
 @import './components/games-list.css';
 @import './components/game.css';
+@import './components/new-game-form.css';
 
 /* Themes */
 @import './themes/copper-theme.css';
