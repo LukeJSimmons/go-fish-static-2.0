@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+.sidebar.sidebar--homepage {
+  padding: var(--op-space-2x-large) var(--op-space-large);
+  gap: var(--op-space-2x-large);
+
+  .sidebar__brand {
+    font-family: 'Finger Paint';
+    font-size: var(--op-font-3x-large);
+    text-align: center;
+  }
+}

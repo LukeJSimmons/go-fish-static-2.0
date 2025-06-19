@@ -9,6 +9,8 @@
   .games-list__header {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    padding-block: var(--op-space-x-small);
   }
 
   section {

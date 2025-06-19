@@ -3,6 +3,7 @@
 
 /* Optics Overrides */
 @import './components/optics-overrides/accordion.css';
+@import './components/optics-overrides/sidebar.css';
 
 /* Component Styles */
 @import './components/panel.css';
