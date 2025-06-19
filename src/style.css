@@ -18,6 +18,19 @@
 /* Themes */
 @import './themes/copper-theme.css';
 
+body {
+  background: none;
+}
+
+a {
+  color: var(--op-color-neutral-minus-max);
+  text-decoration: none;
+}
+
+input {
+  color-scheme: only light;
+}
+
 .game-layout {
   --gf-sidebar-width: calc(var(--op-size-unit) * 90);
   --gf-footer-height: calc(var(--op-size-unit) * 70);
@@ -35,15 +48,6 @@
   gap: var(--op-space-x-small);
   font-weight: var(--op-font-weight-semi-bold);
   font-size: var(--op-font-large);
-}
-
-a {
-  color: var(--op-color-neutral-minus-max);
-  text-decoration: none;
-}
-
-input {
-  color-scheme: only light;
 }
 
 /* --op-breakpoint-small */
