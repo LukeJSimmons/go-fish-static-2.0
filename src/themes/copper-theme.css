@@ -35,4 +35,21 @@
       }
     }
   }
+
+  .sidebar--homepage,
+  .games-list,
+  .new-game-form {
+    .btn,
+    input {
+      border-radius: var(--op-radius-pill);
+    }
+  }
+
+  .form-group.form-group--new-game-form {
+    border-radius: var(--op-radius-2x-large);
+  }
+
+  .game {
+    border-radius: var(--op-radius-pill);
+  }
 }

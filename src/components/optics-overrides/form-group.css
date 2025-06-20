@@ -9,7 +9,7 @@
     box-shadow: var(--op-border-all) var(--op-color-border);
     padding: var(--op-space-large);
     border-radius: var(--op-radius-large);
-    background-color: var(--op-color-neutral-plus-eight);
+    background-color: var(--op-color-primary-plus-eight);
     width: calc(var(--op-size-unit) * 100);
 
     .form-label--radio {

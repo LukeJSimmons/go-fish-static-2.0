@@ -14,6 +14,16 @@
     display: grid;
     grid-template-columns: 1fr calc(var(--op-size-unit) * 15);
 
+    > *:first-child input {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    > *:last-child input {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
     &.new-game-form__form-row--radio {
       gap: var(--op-space-small);
     }
