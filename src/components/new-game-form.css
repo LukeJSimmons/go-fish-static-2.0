@@ -1,4 +1,5 @@
 .new-game-form {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,12 +15,12 @@
     display: grid;
     grid-template-columns: 1fr calc(var(--op-size-unit) * 15);
 
-    > *:first-child input {
+    > *:first-child .form-control {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
 
-    > *:last-child input {
+    > *:last-child .form-control {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }

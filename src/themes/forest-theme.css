@@ -4,12 +4,13 @@
   --op-color-primary-s: 33%;
   --op-color-primary-l: 30%;
 
+  --gf-radius-one-line: 0;
+  --gf-radius-multi-line: 0;
+  --gf-radius-feed-bubble: 0;
+
   .accordion.accordion--within-player-decks {
-    border-radius: 0;
-    
     summary {
       padding: var(--op-space-small) var(--op-space-x-small);
-      border-radius: 0;
     }
   }
 

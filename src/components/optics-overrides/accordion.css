@@ -1,7 +1,7 @@
 .accordion.accordion--within-player-decks {
   background-color: var(--op-color-neutral-plus-eight);
   box-shadow: var(--op-border-all) var(--op-color-primary-plus-four);
-  border-radius: var(--op-radius-small);
+  border-radius: var(--gf-radius-multi-line);
 
   summary {
     padding: 0 var(--op-space-x-small);

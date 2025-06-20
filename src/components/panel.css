@@ -34,7 +34,7 @@
     background-color: var(--op-color-neutral-plus-eight);
     color: var(--op-color-neutral-on-plus-eight);
     box-shadow: var(--op-border-all) var(--op-color-border);
-    border-radius: var(--op-radius-large);
+    border-radius: var(--gf-radius-multi-line);
 
     padding: var(--op-space-2x-large);
 

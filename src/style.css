@@ -1,5 +1,6 @@
 /* Optics */
 @import '@rolemodel/optics/dist/css/optics.css';
+@import '@rolemodel/optics/dist/css/addons/fonts/phosphor_icons';
 
 /* Optics Overrides */
 @import './components/optics-overrides/accordion.css';
@@ -19,6 +20,11 @@
 @import './themes/copper-theme.css';
 @import './themes/forest-theme.css';
 
+:root {
+  --gf-radius-one-line: var(--op-radius-small);
+  --gf-radius-multi-line: var(--op-radius-x-large);
+}
+
 body {
   background: none;
 }
@@ -33,6 +39,7 @@ input {
 }
 
 .game-layout {
+
   --gf-sidebar-width: calc(var(--op-size-unit) * 90);
   --gf-footer-height: calc(var(--op-size-unit) * 70);
 

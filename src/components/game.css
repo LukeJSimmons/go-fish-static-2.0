@@ -3,8 +3,9 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--op-space-x-small) var(--op-space-medium);
+  padding-right: var(--op-space-x-small);
   
-  border-radius: var(--op-radius-medium);
+  border-radius: var(--gf-radius-one-line);
   background-color: var(--op-color-neutral-plus-eight);
   color: var(--op-color-neutral-on-plus-eight);
   box-shadow: var(--op-border-all) var(--op-color-border);
