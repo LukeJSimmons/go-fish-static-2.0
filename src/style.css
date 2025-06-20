@@ -3,17 +3,17 @@
 
 /* Optics Overrides */
 @import './components/optics-overrides/accordion.css';
-@import './components/optics-overrides/sidebar.css';
 @import './components/optics-overrides/form-group.css';
+@import './components/optics-overrides/sidebar.css';
 
 /* Component Styles */
-@import './components/panel.css';
-@import './components/player-decks.css';
 @import './components/cards.css';
 @import './components/feed.css';
-@import './components/games-list.css';
 @import './components/game.css';
+@import './components/games-list.css';
 @import './components/new-game-form.css';
+@import './components/panel.css';
+@import './components/player-decks.css';
 
 /* Themes */
 @import './themes/copper-theme.css';
