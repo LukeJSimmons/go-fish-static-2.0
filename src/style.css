@@ -17,6 +17,7 @@
 
 /* Themes */
 @import './themes/copper-theme.css';
+@import './themes/forest-theme.css';
 
 body {
   background: none;

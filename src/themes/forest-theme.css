@@ -1,0 +1,47 @@
+:root[data-theme="forest"] {
+  /* Colors */
+  --op-color-primary-h: 140;
+  --op-color-primary-s: 33%;
+  --op-color-primary-l: 30%;
+
+  .accordion.accordion--within-player-decks {
+    border-radius: 0;
+    
+    summary {
+      padding: var(--op-space-small) var(--op-space-x-small);
+      border-radius: 0;
+    }
+  }
+
+  .player-decks {
+    .player-decks__deck-group {
+      padding: var(--op-space-small) var(--op-space-medium);
+    }
+  }
+
+  .cards {
+    &.cards--deck {
+      --gf-cards-height: calc(var(--op-size-unit) * 35);
+    }
+
+    &.cards--books {
+      --gf-cards-overlap: calc(var(--op-size-unit) * -11);
+    }
+  }
+
+  .feed {
+    .feed__bubble {
+      border-radius: 0;
+      padding: var(--op-space-x-large) var(--op-space-large);
+    }
+
+    .feed__request-form {
+      border-radius: 0;
+
+      select,
+      button {
+        border-radius: 0;
+      }
+    }
+  }
+}
