@@ -34,10 +34,11 @@
 
   .feed__bubble {
     --gf-radius-feed-bubble: var(--op-radius-x-large);
+    --gf-feed-bubble-padding: var(--op-space-small);
 
     width: 100%;
     font-size: var(--op-font-small);
-    padding: var(--op-space-small);
+    padding: var(--gf-feed-bubble-padding);
     border-radius: var(--gf-radius-feed-bubble);
 
     &.feed__bubble--player-action {

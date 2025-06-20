@@ -6,17 +6,15 @@
 
   --gf-radius-one-line: 0;
   --gf-radius-multi-line: 0;
-  --gf-radius-feed-bubble: 0;
 
   .accordion.accordion--within-player-decks {
-    summary {
-      padding: var(--op-space-small) var(--op-space-x-small);
-    }
+    --gf-radius-player-decks: 0;
+    --gf-summary-padding: var(--op-space-small) var(--op-space-x-small);
   }
 
   .player-decks {
     .player-decks__deck-group {
-      padding: var(--op-space-small) var(--op-space-medium);
+      --gf-deck-group-padding: var(--op-space-small) var(--op-space-medium);
     }
   }
 
@@ -32,17 +30,8 @@
 
   .feed {
     .feed__bubble {
-      border-radius: 0;
-      padding: var(--op-space-x-large) var(--op-space-large);
-    }
-
-    .feed__request-form {
-      border-radius: 0;
-
-      select,
-      button {
-        border-radius: 0;
-      }
+      --gf-radius-feed-bubble: 0;
+      --gf-feed-bubble-padding: var(--op-space-x-large) var(--op-space-large);
     }
   }
 }

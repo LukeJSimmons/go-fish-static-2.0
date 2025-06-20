@@ -1,11 +1,13 @@
 .accordion.accordion--within-player-decks {
+  --gf-radius-player-decks: var(--op-space-x-small);
+  --gf-summary-padding: 0 var(--op-space-medium) 0 var(--op-space-x-small);
+
   background-color: var(--op-color-neutral-plus-eight);
   box-shadow: var(--op-border-all) var(--op-color-primary-plus-four);
-  border-radius: var(--gf-radius-multi-line);
+  border-radius: var(--gf-radius-player-decks);
 
   summary {
-    padding: 0 var(--op-space-x-small);
-    padding-right: var(--op-space-medium);
+    padding: var(--gf-summary-padding);
     box-shadow: var(--op-border-all) var(--op-color-primary-plus-four);
 
     background-color: var(--op-color-primary-plus-max);

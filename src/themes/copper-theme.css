@@ -13,6 +13,14 @@
   --gf-radius-multi-line: var(--op-radius-2x-large);
   --gf-radius-feed-bubble: var(--op-radius-pill);
 
+  .btn {
+    border-radius: var(--gf-radius-one-line);
+  }
+
+  .accordion.accordion--within-player-decks {
+    border-radius: var(--gf-radius-player-decks);
+  }
+
   .feed {
     .feed__bubble {
       border-radius: var(--op-radius-pill);

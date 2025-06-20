@@ -21,7 +21,7 @@
 @import './themes/forest-theme.css';
 
 :root {
-  --gf-radius-one-line: var(--op-radius-small);
+  --gf-radius-one-line: var(--op-radius-medium);
   --gf-radius-multi-line: var(--op-radius-x-large);
 }
 
