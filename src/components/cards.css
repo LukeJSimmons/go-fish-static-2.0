@@ -39,10 +39,6 @@
     &:hover {
       bottom: var(--op-space-small);
     }
-
-    &:active {
-      bottom: var(--op-space-large);
-    }
   }
 }
 

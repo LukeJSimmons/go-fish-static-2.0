@@ -1,5 +1,5 @@
 .player-decks {
-  --gf-deck-group-padding: 0;
+  --gf-deck-group-padding: var(--op-space-2x-small);
   padding: var(--op-space-large) var(--op-space-3x-large);
   display: flex;
   flex-direction: column;

@@ -47,7 +47,7 @@
   }
 
   &[open] {
-    > summary {
+    summary {
       background-color: var(--op-color-primary-plus-eight);
       color: var(--op-color-primary-on-plus-eight);
     }
