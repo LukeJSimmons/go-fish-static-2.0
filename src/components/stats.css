@@ -1,0 +1,8 @@
+.stats {
+  --gf-stats-title-height: 5rem;
+  --gf-stats-bottom-margin: 15rem;
+
+  display: grid;
+  grid-template-rows: var(--gf-stats-title-height) 1fr var(--gf-stats-bottom-margin);
+  padding-top: var(--op-space-3x-large);
+}

@@ -15,6 +15,7 @@
 @import './components/new-game-form.css';
 @import './components/panel.css';
 @import './components/player-decks.css';
+@import './components/stats.css';
 
 /* Themes */
 @import './themes/copper-theme.css';
